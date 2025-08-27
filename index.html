@@ -7,6 +7,13 @@
   <link rel="stylesheet" href="style.css">
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .villain-img {
+      max-height: 400px;
+      object-fit: cover;
+      margin: auto;
+    }
+  </style>
 </head>
 <body>
 
@@ -22,14 +29,13 @@
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#villains">Villains</a></li>
           <li class="nav-item"><a class="nav-link" href="#powers">Powers</a></li>
-          <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <header id="home" class="hero-section text-center text-light d-flex align-items-center justify-content-center">
+  <header id="home" class="hero-section text-center text-light d-flex align-items-center justify-content-center bg-dark" style="height:60vh;">
     <div>
       <h1 class="display-3 fw-bold">Welcome to Anime Villains Wiki</h1>
       <p class="lead">Explore the dark side of anime: powers, history, and legends.</p>
@@ -44,100 +50,20 @@
       <div id="villainCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
 
-          <!-- Villain Items -->
-          <div class="carousel-item active">
-            <img src="Alucard.jpg" class="d-block villain-img" alt="Alucard">
-            <div class="carousel-caption"><h5>Alucard</h5></div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="Chrollo Lucilfer.jpg" class="d-block villain-img" alt="Chrollo Lucilfer">
-            <div class="carousel-caption"><h5>Chrollo Lucilfer</h5></div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="doflamingo.jpg" class="d-block villain-img" alt="Doflamingo">
-            <div class="carousel-caption"><h5>Doflamingo</h5></div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="Eren Yeager.jpg" class="d-block villain-img" alt="Eren Yeager">
-            <div class="carousel-caption"><h5>Eren Yeager</h5></div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="Frieza.jpg" class="d-block villain-img" alt="Frieza">
-            <div class="carousel-caption"><h5>Frieza</h5></div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="garou.jpg" class="d-block villain-img" alt="Garou">
-            <div class="carousel-caption"><h5>Garou</h5></div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="Griffith.jpg" class="d-block villain-img" alt="Griffith">
-            <div class="carousel-caption"><h5>Griffith</h5></div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="Izaya Orihara.jpg" class="d-block villain-img" alt="Izaya Orihara">
-            <div class="carousel-caption"><h5>Izaya Orihara</h5></div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="Jason.jpg" class="d-block villain-img" alt="Jason">
-            <div class="carousel-caption"><h5>Jason</h5></div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="Johan Liebert.jpg" class="d-block villain-img" alt="Johan Liebert">
-            <div class="carousel-caption"><h5>Johan Liebert</h5></div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="Lelouch Lamperouge.jpg" class="d-block villain-img" alt="Lelouch Lamperouge">
-            <div class="carousel-caption"><h5>Lelouch Lamperouge</h5></div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="Light Yagami.jpg" class="d-block villain-img" alt="Light Yagami">
-            <div class="carousel-caption"><h5>Light Yagami</h5></div>
-          </div>
-
-          <div class="carousel-item">
+          <!-- Example Villains -->
+          <div class="carousel-item active" data-villain="madara">
             <img src="madharauchiha.jpg" class="d-block villain-img" alt="Madara Uchiha">
             <div class="carousel-caption"><h5>Madara Uchiha</h5></div>
           </div>
 
-          <div class="carousel-item">
-            <img src="makima.jpg" class="d-block villain-img" alt="Makima">
-            <div class="carousel-caption"><h5>Makima</h5></div>
+          <div class="carousel-item" data-villain="light">
+            <img src="Light Yagami.jpg" class="d-block villain-img" alt="Light Yagami">
+            <div class="carousel-caption"><h5>Light Yagami</h5></div>
           </div>
 
-          <div class="carousel-item">
-            <img src="Makishima Shogo.jpg" class="d-block villain-img" alt="Makishima Shogo">
-            <div class="carousel-caption"><h5>Makishima Shogo</h5></div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="muzan.jpg" class="d-block villain-img" alt="Muzan">
-            <div class="carousel-caption"><h5>Muzan</h5></div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="Shou Tucker.jpg" class="d-block villain-img" alt="Shou Tucker">
-            <div class="carousel-caption"><h5>Shou Tucker</h5></div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="sosuke-aizen.jpg" class="d-block villain-img" alt="Sosuke Aizen">
-            <div class="carousel-caption"><h5>Sosuke Aizen</h5></div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="sukuna.jpg" class="d-block villain-img" alt="Sukuna">
-            <div class="carousel-caption"><h5>Sukuna</h5></div>
+          <div class="carousel-item" data-villain="frieza">
+            <img src="Frieza.jpg" class="d-block villain-img" alt="Frieza">
+            <div class="carousel-caption"><h5>Frieza</h5></div>
           </div>
 
         </div>
@@ -153,6 +79,16 @@
     </div>
   </section>
 
+  <!-- Villain Info Section -->
+  <section id="powers" class="py-5 bg-light text-dark">
+    <div class="container">
+      <h2 class="text-center mb-4">Villain Profile</h2>
+      <div id="villainInfo" class="row justify-content-center">
+        <p class="text-center">👉 Select a villain from the carousel to see their powers & history.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="text-center py-4 bg-black text-light">
     <p>© 2025 Anime Villains Wiki | Built by Fanboys ❤️</p>
@@ -160,8 +96,66 @@
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script>
+    // Villain Data (can expand later)
+    const villains = {
+      madara: {
+        name: "Madara Uchiha",
+        anime: "Naruto Shippuden",
+        powers: "Sharingan, Rinnegan, Susanoo, Wood Style, Infinite Tsukuyomi",
+        history: "Legendary leader of the Uchiha clan, revived to reshape the world through the Eye of the Moon Plan.",
+        killingRate: "★★★★★ (Extremely High)",
+        image: "madharauchiha.jpg"
+      },
+      light: {
+        name: "Light Yagami",
+        anime: "Death Note",
+        powers: "Death Note (kill anyone by writing their name)",
+        history: "A genius student who becomes Kira, trying to create a world free of crime.",
+        killingRate: "★★★★☆ (Very High)",
+        image: "Light Yagami.jpg"
+      },
+      frieza: {
+        name: "Frieza",
+        anime: "Dragon Ball Z",
+        powers: "Super strength, Ki blasts, Transformations, Planet destruction",
+        history: "Tyrant emperor of the universe who wiped out countless races including the Saiyans.",
+        killingRate: "★★★★★ (Universal Threat)",
+        image: "Frieza.jpg"
+      }
+    };
+
+    // Event Listener: when carousel changes, show villain info
+    const carousel = document.getElementById("villainCarousel");
+    carousel.addEventListener("slid.bs.carousel", function (e) {
+      const activeItem = e.relatedTarget;
+      const villainKey = activeItem.getAttribute("data-villain");
+      showVillainInfo(villainKey);
+    });
+
+    // Function to display villain info
+    function showVillainInfo(key) {
+      const villain = villains[key];
+      if (!villain) return;
+
+      document.getElementById("villainInfo").innerHTML = `
+        <div class="col-md-8">
+          <div class="card shadow-lg">
+            <img src="${villain.image}" class="card-img-top" alt="${villain.name}">
+            <div class="card-body">
+              <h3 class="card-title">${villain.name}</h3>
+              <p><strong>Anime:</strong> ${villain.anime}</p>
+              <p><strong>Powers:</strong> ${villain.powers}</p>
+              <p><strong>History:</strong> ${villain.history}</p>
+              <p><strong>Killing Rate:</strong> ${villain.killingRate}</p>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    // Show first villain info on page load
+    showVillainInfo("madara");
+  </script>
 </body>
 </html>
-
-
